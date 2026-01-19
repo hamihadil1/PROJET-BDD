@@ -991,12 +991,11 @@ with st.sidebar:
         with st.spinner("Validation en cours..."):
             try:
                 # Test direct avec psycopg2
+                RENDER_DB_URL = "postgresql://university_db_8ajz_user:7QBiINNF1yJ8Ppq3Df8KS2aLtmnPtZ48@dpg-d5n8la94tr6s73d3n30g-a.virginia-postgres.render.com/university_db_8ajz"
+
                 conn = psycopg2.connect(
-                    dbname="unuversity",
-                    user="postgres",
-                    password="0000",
-                    host="localhost",
-                    port="5433"
+                  RENDER_DB_URL,
+                  sslmode="require"
                 )
                 cursor = conn.cursor()
                 
