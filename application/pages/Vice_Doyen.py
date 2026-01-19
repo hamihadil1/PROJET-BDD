@@ -1000,7 +1000,7 @@ with st.sidebar:
                 cursor = conn.cursor()
                 
                 # Exécuter la fonction
-                cursor.execute("SELECT valider_edt_final(1)")
+                cursor.execute("SELECT gestion_examens.valider_edt_final(1)")
                 result = cursor.fetchone()
                 
                 if result:
