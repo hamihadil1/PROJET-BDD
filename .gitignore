@@ -1,0 +1,35 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+pycache/
+
+# Virtual environments
+env/
+venv/
+ENV/
+
+# Base de données
+*.db
+*.sqlite
+*.sqlite3
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Temporaires
+*.tmp
+*.temp
